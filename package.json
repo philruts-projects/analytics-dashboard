@@ -1,0 +1,27 @@
+{
+  "name": "analytics-dashboard",
+  "version": "1.0.0",
+  "description": "Portfolio web app using Adventure Works data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philruts-projects/analytics-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/philruts-projects/analytics-dashboard/issues"
+  },
+  "homepage": "https://github.com/philruts-projects/analytics-dashboard#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "msnodesqlv8": "^5.2.0",
+    "mssql": "^12.5.5"
+  }
+}
