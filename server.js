@@ -1,3 +1,5 @@
+
+require('dotenv').config();
 const express = require('express');
 const sql = require('mssql');
 const cors = require('cors');
@@ -7,11 +9,11 @@ app.use(cors());
 app.use(express.json());
 
 const dbConfig = {
-  server: 'PHIL-LAPTOP\\MSSQLSERVER01',
-  database: 'AnalyticsDB',
-  user: 'analyticsuser',
-  password: 'Analytics123!',
-  port: 1433,
+  server: process.env.DB_SERVER,
+  database: process.env.DB_NAME,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  port: parseInt(process.env.DB_PORT),
   options: {
     trustServerCertificate: true,
     encrypt: false
